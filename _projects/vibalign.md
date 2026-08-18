@@ -6,6 +6,41 @@ img: assets/img/vibalign-placeholder.svg
 importance: 1
 category: current research
 permalink: /projects/vibalign/
+_styles: |
+  article img {
+    display: block;
+    width: auto;
+    max-width: min(100%, 860px);
+    height: auto;
+    margin: 1.25rem auto;
+  }
+
+  article table {
+    width: 100%;
+    margin: 1.25rem 0;
+    border: 1px solid #9a9a9a;
+    border-collapse: collapse;
+  }
+
+  article th,
+  article td {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #9a9a9a;
+    vertical-align: top;
+  }
+
+  article th {
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    article table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
 ---
 
 ## Overview
@@ -16,6 +51,8 @@ It learns language-aligned signal tokens from one-dimensional vibration and tact
 
 This work represents my recent transition from signal-image-based multimodal adaptation toward direct physical-signal tokenization, with the goal of connecting raw vibration and tactile signals to language-based reasoning systems.
 
+<hr class="section-divider">
+
 ## Motivation
 
 Modern industrial and robotic systems continuously generate rich physical signals, including vibration, tactile, acoustic, force, and other sensor measurements. However, most existing foundation models are primarily designed for text, images, and videos, while continuous physical signals remain underrepresented in the current multimodal AI landscape.
@@ -25,6 +62,8 @@ Existing LLM/MLLM-based signal analysis methods often rely on intermediate repre
 How can raw one-dimensional physical signals be converted into LLM-compatible semantic tokens?
 
 VibAlign aims to bridge this gap by learning compact signal tokens from raw vibration and tactile signals and aligning them with textual label semantics. The framework is designed for structured physical-signal understanding in both industrial fault diagnosis and robotic tactile material recognition.
+
+<hr class="section-divider">
 
 ## Method
 
@@ -40,6 +79,8 @@ The framework follows a three-stage training paradigm. First, the signal encoder
 
 During inference, VibAlign uses candidate scoring over the legal label set to improve label validity and response-format stability, followed by structured explanation generation.
 
+<hr class="section-divider">
+
 ## Key Contributions
 
 - A raw physical-signal-to-LLM framework for vibration and tactile signal understanding
@@ -49,6 +90,8 @@ During inference, VibAlign uses candidate scoring over the legal label set to im
 - Candidate scoring-based inference for stable and label-consistent physical-signal recognition
 - Evaluation on both industrial rolling bearing fault diagnosis and robotic tactile material recognition tasks
 - Additional inference studies, signal-embedding sanity checks, ablations, cross-dataset analysis, and real-world THU dataset analysis
+
+<hr class="section-divider">
 
 ## Key Results
 
@@ -70,6 +113,8 @@ VibAlign is compared with representative MLLM-based diagnostic systems that use 
 
 The comparison is interpreted as a system-level comparison rather than a fully decoding-controlled representation comparison, because different MLLM methods may follow different original inference protocols.
 
+<hr class="section-divider">
+
 ## Robotic Tactile Perception
 
 ![Robotic Tactile Results](/assets/img/vibalign-placeholder.svg)
@@ -80,6 +125,8 @@ This setting is important because tactile vibration signals are generated throug
 
 The tactile recognition results show that raw tactile vibration signals can also be converted into LLM-compatible signal tokens for structured material recognition.
 
+<hr class="section-divider">
+
 ## Inference and Signal Embedding Analysis
 
 VibAlign further studies different inference strategies and signal-embedding conditions.
@@ -88,11 +135,15 @@ The inference comparison shows that open-ended free generation is unstable for s
 
 The signal-embedding sanity study shows that replacing real signal embeddings with no signal, random noise, or shuffled mismatched embeddings leads to clear performance degradation. This indicates that VibAlign relies on the input physical signal rather than only memorizing textual priors or response templates.
 
+<hr class="section-divider">
+
 ## Ablation Study
 
 Ablation studies analyze the effects of several key components, including LLM adaptation, signal-text alignment, positional embedding, reconstruction regularization, the codebook connector, and verbalizer-guided supervision.
 
 The results support the importance of signal-conditioned LLM adaptation, signal-text contrastive alignment, verbalizer loss, and codebook-based signal token construction for stable physical-signal-to-language modeling.
+
+<hr class="section-divider">
 
 ## Real-World THU Analysis
 
@@ -100,11 +151,15 @@ The real-world THU vibration dataset presents stronger dataset shift and more ch
 
 Additional analysis shows that raw-signal-to-language modeling remains sensitive to severe dataset-level shifts. The THU experiments also suggest that longer temporal contexts can be beneficial for real-world vibration modeling, especially when fault-related patterns require more extended temporal information.
 
+<hr class="section-divider">
+
 ## Paper and Code
 
 - Paper: Coming soon
 - Code: Coming soon
 - Status: Manuscript coming soon
+
+<hr class="section-divider">
 
 ## Notes
 

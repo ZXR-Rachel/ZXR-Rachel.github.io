@@ -7,6 +7,41 @@ importance: 3
 category: published research
 github: https://github.com/ZXR-Rachel/VSLLaVA
 permalink: /projects/vsllava/
+_styles: |
+  article img {
+    display: block;
+    width: auto;
+    max-width: min(100%, 860px);
+    height: auto;
+    margin: 1.25rem auto;
+  }
+
+  article table {
+    width: 100%;
+    margin: 1.25rem 0;
+    border: 1px solid #9a9a9a;
+    border-collapse: collapse;
+  }
+
+  article th,
+  article td {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #9a9a9a;
+    vertical-align: top;
+  }
+
+  article th {
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    article table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
 ---
 
 ## Overview
@@ -17,11 +52,15 @@ It formulates vibration signal interpretation as a multimodal question-answering
 
 This work represents my early exploration of connecting physical vibration signals with large multimodal foundation models through signal visualization, expert-guided instruction tuning, and signal-oriented response refinement.
 
+<hr class="section-divider">
+
 ## Motivation
 
 Large multimodal models provide a flexible natural-language interface for visual reasoning and interactive analysis. However, general-purpose LMMs usually lack domain-specific priors for industrial vibration signal analysis, while conventional PHM systems are often designed as task-specific pipelines with fixed labels, fixed outputs, and limited interactivity.
 
 VSLLaVA aims to bridge this gap by converting vibration signal analysis into an expert-guided Signal-Question-Answer (SQA) format. Instead of replacing specialized diagnostic models, it provides a flexible human-in-the-loop interface that allows PHM engineers to query signal types, parameters, and diagnostic explanations through multimodal instructions.
+
+<hr class="section-divider">
 
 ## Method
 
@@ -36,6 +75,8 @@ VSLLaVA consists of four main components:
 
 The pipeline first converts vibration signals into visual representations and constructs multimodal SQA triplets. Different VLM backbones are then adapted through parameter-efficient supervised fine-tuning. Finally, a tailored GRPO stage is introduced to improve classification-oriented signal type identification.
 
+<hr class="section-divider">
+
 ## Key Contributions
 
 - A vibration-signal-oriented LMM adaptation pipeline for industrial signal analysis
@@ -44,6 +85,8 @@ The pipeline first converts vibration signals into visual representations and co
 - A tailored GRPO refinement stage for signal type identification
 - A dual-mode evaluation framework combining expert-designed quantitative metrics and LMM-referee evaluation
 - Additional validation through text-only ablation, real-signal experiments, vision-encoder co-tuning analysis, and conventional deep learning baselines
+
+<hr class="section-divider">
 
 ## Key Results
 
@@ -65,6 +108,8 @@ The heatmap results further show that the proposed SQA-SFT strategy is not limit
 
 The degree of improvement differs across backbones and signal categories. Models with stronger pretrained visual-language alignment, such as Ovis2-8B and Qwen2-VL, generally achieve stronger post-SFT performance. Real-bearing signals remain more difficult than many simulated signal categories because of stronger noise, weaker visual regularity, and more complex physical patterns.
 
+<hr class="section-divider">
+
 ## GRPO Refinement
 
 ![GRPO Training Results](/assets/img/vsllava/grpo_curve.png)
@@ -76,6 +121,8 @@ The GRPO reward function incorporates domain-specific synonym matching, fuzzy ma
 Across the evaluated VLM backbones, SQA-SFT+GRPO consistently improves signal-type classification metrics over SQA-SFT alone. For example, InternVL3-8B improves from 79.36% to 97.50% in accuracy and from 76.99% to 97.48% in macro F1. LLaVA-next-8B improves from 77.84% to 95.27% in accuracy and from 77.77% to 97.06% in macro F1.
 
 GRPO is therefore used as a task-specific post-SFT refinement step. Its role is to improve concise and label-consistent signal type identification rather than to claim universal improvement on all open-ended signal reasoning tasks.
+
+<hr class="section-divider">
 
 ## Additional Studies
 
@@ -152,6 +199,8 @@ However, robust closed-set real-bearing-fault classification remains challenging
 
 Overall, the JNU experiment shows that envelope analysis is a useful but not universally sufficient preprocessing strategy. Real bearing signals still require stronger signal-specific visual representations, more explicit frequency-domain grounding, and more reliable adaptation methods.
 
+<hr class="section-divider">
+
 ## Paper and Code
 
 - Published paper: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1474034626007159)
@@ -159,6 +208,8 @@ Overall, the JNU experiment shows that envelope analysis is a useful but not uni
 - Code: [GitHub](https://github.com/ZXR-Rachel/VSLLaVA)
 - Citation: Li Q, Zhang X, Huang J, et al. VSLLaVA: A pipeline for Large Multimodal Foundation Models in industrial vibration signal analysis. *Advanced Engineering Informatics*, 2026, 76: 105023.
 - Status: Published in *Advanced Engineering Informatics*
+
+<hr class="section-divider">
 
 ## Notes
 

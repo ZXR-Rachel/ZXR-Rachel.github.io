@@ -6,6 +6,41 @@ img: assets/img/faultovis/architecture.png
 importance: 2
 category: current research
 permalink: /projects/faultovis/
+_styles: |
+  article img {
+    display: block;
+    width: auto;
+    max-width: min(100%, 860px);
+    height: auto;
+    margin: 1.25rem auto;
+  }
+
+  article table {
+    width: 100%;
+    margin: 1.25rem 0;
+    border: 1px solid #9a9a9a;
+    border-collapse: collapse;
+  }
+
+  article th,
+  article td {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #9a9a9a;
+    vertical-align: top;
+  }
+
+  article th {
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    article table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
 ---
 
 ## Overview
@@ -16,6 +51,8 @@ It converts raw vibration signals into short-time Fourier transform (STFT) image
 
 This work represents my exploration of adapting multimodal foundation models to industrial sensor-image reasoning under domain shifts.
 
+<hr class="section-divider">
+
 ## Motivation
 
 Rolling bearings are widely used in rotating machinery, and their health condition directly affects industrial safety, reliability, and maintenance cost. Although deep learning methods have achieved strong results in closed-set fault diagnosis, their performance often drops when the training and testing data come from different working conditions.
@@ -25,6 +62,8 @@ Vision-language models offer new opportunities for interactive and explainable i
 A key issue is that standard visual instruction tuning mainly optimizes textual generation. The model may learn to produce diagnostic answer formats without learning robust visual representations that generalize across domains.
 
 FaultOvis aims to address this problem by adding explicit visual-side supervision to the VLM adaptation process. The goal is to make the visual branch learn representations that are both fault-discriminative and more robust to unseen working conditions.
+
+<hr class="section-divider">
 
 ## Method
 
@@ -62,6 +101,8 @@ In the second stage, FaultOvis activates visual-side discriminative reinforcemen
 
 This staged design decouples diagnostic answer-format learning from visual representation reinforcement, making the optimization process more stable.
 
+<hr class="section-divider">
+
 ## Key Contributions
 
 - A domain-generalized vision-language framework for cross-domain rolling bearing fault diagnosis
@@ -70,6 +111,8 @@ This staged design decouples diagnostic answer-format learning from visual repre
 - A two-stage training strategy that separates diagnostic format adaptation from visual discriminative reinforcement
 - Leave-one-domain-out evaluation on CWRU and Ottawa bearing datasets under unseen working conditions
 - Ablation studies validating the roles of auxiliary classification, contrastive alignment, visual-module optimization, and loss-weight settings
+
+<hr class="section-divider">
 
 ## Key Results
 
@@ -94,6 +137,8 @@ On the Ottawa benchmark, FaultOvis achieves particularly strong results:
 - T8: **79.33% Acc. / 67.27% F1**
 
 Compared with the base Ovis2-1B, FaultOvis substantially improves the F1-score on several difficult domain-shift tasks, showing that explicit visual-side supervision is important for VLM-based industrial diagnosis.
+
+<hr class="section-divider">
 
 ## Ablation Study
 
@@ -126,6 +171,8 @@ The fourth ablation studies the effect of the triplet contrastive loss weight. S
 
 Overall, the ablation studies confirm that FaultOvis benefits from both category-discriminative and domain-invariant visual representation learning.
 
+<hr class="section-divider">
+
 ## Notes
 
 FaultOvis is not intended to be only a conventional bearing fault classifier. Its main purpose is to investigate how vision-language models can be adapted to domain-shifted industrial signal analysis.
@@ -133,6 +180,8 @@ FaultOvis is not intended to be only a conventional bearing fault classifier. It
 The key finding is that purely generative VLM adaptation is insufficient for robust cross-domain fault diagnosis. To use VLMs effectively in industrial diagnosis, the visual representation space should be explicitly supervised and aligned with fault-discriminative, domain-invariant objectives.
 
 This project serves as an intermediate step in my research trajectory from signal-image-based VLM adaptation to more general physical-signal foundation models.
+
+<hr class="section-divider">
 
 ## Paper and Code
 
