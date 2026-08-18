@@ -20,7 +20,7 @@ My research explores how non-text physical signals — such as **vibration, tact
 <table>
   <tr>
     <td width="70">
-      <img src="assets/img/education/thu.png" width="100">
+      <img src="./assets/img/education/thu.png" width="100">
     </td>
     <td>
       <strong>Tsinghua University</strong><br>
@@ -36,7 +36,7 @@ My research explores how non-text physical signals — such as **vibration, tact
 <table>
   <tr>
     <td width="70">
-      <img src="assets/img/education/hnu.png" width="100">
+      <img src="./assets/img/education/hnu.png" width="100">
     </td>
     <td>
       <strong>Hunan University</strong><br>
@@ -80,7 +80,7 @@ I am particularly interested in three directions:
 
 ### VibAlign: Raw Physical Signal Tokens for LLMs
 
-[![VibAlign](assets/img/vibalign_overview.png)](projects/vibalign.md)
+[![VibAlign](./assets/img/vibalign_overview.png)](./projects/vibalign.md)
 
 **VibAlign** learns language-aligned signal tokens from raw one-dimensional vibration and tactile signals, enabling LLM-based structured recognition and signal-conditioned reasoning for industrial diagnosis and robotic tactile perception.
 
@@ -88,25 +88,25 @@ I am particularly interested in three directions:
 
 **Status:** Manuscript in preparation / under review
 
-[Project Page](projects/vibalign.md) · Paper coming soon · Code coming soon
+[Project Page](./projects/vibalign.md) · Paper coming soon · Code coming soon
 
 ---
 
 ### FaultOvis: Domain-Generalized VLM for Industrial Fault Diagnosis
 
-[![FaultOvis](assets/img/faultovis/architecture.png)](projects/faultovis/)
+[![FaultOvis](./assets/img/faultovis/architecture.png)](./projects/faultovis/)
 
 **FaultOvis** adapts a vision-language model to cross-domain bearing fault diagnosis by combining STFT-based signal images, diagnostic instruction tuning, auxiliary visual classification, and contrastive representation learning.
 
 **Highlights:** domain generalization · VLM adaptation · STFT signal images · visual-side discriminative supervision
 
-[Project Page](projects/faultovis.md) · Paper coming soon · Code coming soon
+[Project Page](./projects/faultovis.md) · Paper coming soon · Code coming soon
 
 ---
 
 ### VSLLaVA: Multimodal Instruction Tuning for Industrial Vibration Signal Analysis
 
-[![VSLLaVA](assets/img/vsllava/architecture.png)](projects/vsllava/)
+[![VSLLaVA](./assets/img/vsllava/architecture.png)](./projects/vsllava/)
 
 **VSLLaVA** adapts large multimodal foundation models to industrial vibration signal analysis by formulating signal understanding as an expert-guided multimodal question-answering task.
 
@@ -114,7 +114,7 @@ I am particularly interested in three directions:
 
 **Status:** Published in *Advanced Engineering Informatics* · Code publicly available
 
-[Project Page](projects/vsllava/) · [Published Paper](https://www.sciencedirect.com/science/article/pii/S1474034626007159) · [Preprint](https://arxiv.org/abs/2409.07482) · [Code](https://github.com/ZXR-Rachel/VSLLaVA)
+[Project Page](./projects/vsllava/) · [Published Paper](https://www.sciencedirect.com/science/article/pii/S1474034626007159) · [Preprint](https://arxiv.org/abs/2409.07482) · [Code](https://github.com/ZXR-Rachel/VSLLaVA)
 
 ---
 
@@ -140,9 +140,9 @@ I am organizing my research projects into visual project pages. Each page includ
 
 | Project | Topic | Page |
 |---|---|---|
-| VibAlign | Raw physical-signal tokenization for industrial and robotic systems | [View Project](projects/vibalign.md) |
-| FaultOvis | Domain-generalized VLM adaptation for bearing fault diagnosis | [View Project](projects/faultovis.md) |
-| VSLLaVA | Multimodal instruction tuning for industrial vibration signal analysis | [View Project](projects/vsllava.md) |
+| VibAlign | Raw physical-signal tokenization for industrial and robotic systems | [View Project](./projects/vibalign.md) |
+| FaultOvis | Domain-generalized VLM adaptation for bearing fault diagnosis | [View Project](./projects/faultovis.md) |
+| VSLLaVA | Multimodal instruction tuning for industrial vibration signal analysis | [View Project](./projects/vsllava.md) |
 
 ---
 
@@ -213,7 +213,7 @@ I am organizing my research projects into visual project pages. Each page includ
 
 - Email: [xinran-z24@mails.tsinghua.edu.cn](mailto:xinran-z24@mails.tsinghua.edu.cn)
 - GitHub: [ZXR-Rachel](https://github.com/ZXR-Rachel)
-- CV: [Download My CV](assets/cv/cv-xinran-zhang.pdf)
+- CV: [Download My CV](./assets/cv/cv-xinran-zhang.pdf)
 - Google Scholar: [Coming Soon](#)
 - LinkedIn: [Coming Soon](#)
 
