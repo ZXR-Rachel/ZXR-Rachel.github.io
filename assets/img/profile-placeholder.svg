@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder for Xinran Zhang</title>
+  <desc id="desc">A neutral profile placeholder with the initials XZ.</desc>
+  <rect width="600" height="720" fill="#eef2f3"/>
+  <circle cx="300" cy="270" r="118" fill="#a9b8bc"/>
+  <path d="M100 650c18-150 92-235 200-235s182 85 200 235" fill="#a9b8bc"/>
+  <circle cx="300" cy="360" r="260" fill="none" stroke="#2a7f86" stroke-width="12"/>
+  <text x="300" y="686" text-anchor="middle" fill="#24464a" font-family="Arial, sans-serif" font-size="48" font-weight="700">XZ</text>
+</svg>
