@@ -1,0 +1,86 @@
+- title: Education
+  type: time_table
+  contents:
+    - title: M.S. in Mechanical Engineering
+      institution: Tsinghua University
+      year: Sept. 2024 - Jun. 2027 (expected)
+      description:
+        - "GPA: 4.0 / 4.0"
+        - "Rank: 1 / 74"
+    - title: B.S. in Vehicle Engineering
+      institution: Hunan University
+      year: Sept. 2020 - Jun. 2024
+      description:
+        - "GPA: 3.91 / 4.0"
+        - "Rank: 1 / 123 for three consecutive academic years"
+
+- title: Research Interests
+  type: list
+  contents:
+    - Physical Signal Foundation Models
+    - Multimodal Large Language Models for Industrial and Robotic Systems
+    - Signal-Language, Signal-Vision, and Signal-Action Alignment
+    - Vibration, Tactile, and Acoustic Signal Understanding
+    - Domain Generalization and Representation Learning
+    - Prognostics and Health Management (PHM)
+    - Industrial AI Agents and Intelligent Operation and Maintenance
+
+- title: Selected Awards
+  type: time_table
+  contents:
+    - year: "2025"
+      items:
+        - University First-Class Scholarship, Tsinghua University
+    - year: "2021-2023"
+      items:
+        - National Scholarship, 2021, 2022, and 2023
+        - Honorable Mention, Mathematical Contest in Modeling, 2023
+        - National First Prize, National English Competition for College Students, 2023
+        - National Third Prize, Chinese Mathematics Competition for College Students, 2023
+    - year: "2022"
+      items:
+        - Second Prize, Hunan Provincial Mechanics Competition
+
+- title: Teaching and Leadership
+  type: list
+  contents:
+    - Teaching Assistant, <strong>Fundamentals of Engineering Drawing</strong>, Tsinghua University
+    - Leader, Peer Learning Support Group, Hunan University
+
+- title: Programming and Research Tools
+  type: list
+  contents:
+    - Python
+    - PyTorch
+    - Hugging Face
+    - Linux
+    - Git
+    - VS Code
+    - LaTeX
+
+- title: Research Skills
+  type: list
+  contents:
+    - LLM/VLM adaptation
+    - LoRA / PEFT
+    - Multimodal instruction tuning
+    - GRPO / reinforcement-learning-based refinement
+    - Contrastive learning
+    - Representation learning
+    - Vibration and tactile signal preprocessing
+    - STFT and envelope spectrum analysis
+    - Signal visualization and experimental evaluation
+
+- title: Contact
+  type: map
+  contents:
+    - name: Email
+      value: <a href="mailto:xinran-z24@mails.tsinghua.edu.cn">xinran-z24@mails.tsinghua.edu.cn</a>
+    - name: GitHub
+      value: <a href="https://github.com/ZXR-Rachel">ZXR-Rachel</a>
+    - name: CV
+      value: <a href="/assets/cv/cv-xinran-zhang.pdf">Download PDF</a>
+    - name: Google Scholar
+      value: Coming soon
+    - name: LinkedIn
+      value: Coming soon

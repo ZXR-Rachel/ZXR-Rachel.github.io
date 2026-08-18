@@ -20,7 +20,7 @@ My research explores how non-text physical signals — such as **vibration, tact
 <table>
   <tr>
     <td width="70">
-      <img src="./assets/img/education/thu.png" width="100">
+      <img src="./assets/img/education/thu.png" width="100"> 
     </td>
     <td>
       <strong>Tsinghua University</strong><br>
