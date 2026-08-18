@@ -1,0 +1,12 @@
+# Uses the smaller prebuilt al-folio image for local development.
+services:
+  jekyll:
+    image: amirpourmand/al-folio:slim
+    command: ["/bin/bash", "/srv/jekyll/bin/entry_point.sh"]
+    ports:
+      - "8080:8080"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      - JEKYLL_ENV=development

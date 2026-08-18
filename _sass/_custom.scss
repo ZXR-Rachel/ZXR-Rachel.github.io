@@ -1,0 +1,42 @@
+// Site-specific responsive refinements.
+.post-header .desc,
+.post-title {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+@media (max-width: 575px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .profile figure {
+    max-width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile .more-info {
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  footer.fixed-bottom {
+    position: static !important;
+  }
+
+  footer.fixed-bottom .container {
+    padding-right: 12px;
+    padding-left: 12px;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+}
