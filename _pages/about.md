@@ -59,33 +59,27 @@ My research explores how non-text physical signals, such as **vibration, tactile
 
 <hr class="section-divider">
 
-## Research Vision
-{: #research-vision }
-
-Modern industrial and robotic systems continuously generate rich physical signals, including vibration, tactile, acoustic, force, and other sensor measurements. However, most existing foundation models are primarily designed for text, images, or videos, while physical signals remain underrepresented in the current multimodal AI landscape.
-
-My long-term research goal is to develop **foundation-model-based physical signal intelligence**: building unified representations, cross-modal alignment methods, and reliable reasoning frameworks that connect physical signals with **language, vision, and action spaces**.
-
-I am particularly interested in three directions:
-
-- **Physical-signal foundation models** for vibration, tactile, and acoustic signal understanding
-- **Robot tactile perception and embodied physical-signal modeling**
-- **Industrial AI agents**, intelligent maintenance, and digital-twin systems powered by LLMs
-
-<hr class="section-divider">
-
 ## Research Interests
 {: #research-interests }
 
-- Physical Signal Foundation Models
-- Multimodal Large Language Models for Industrial and Robotic Systems
-- Signal-Language, Signal-Vision, and Signal-Action Alignment
-- Vibration, Tactile, and Acoustic Signal Understanding
-- Domain Generalization and Representation Learning
-- Prognostics and Health Management (PHM)
-- Industrial AI Agents and Intelligent Operation and Maintenance
+Physical signal-based models for industrial and robotic systems:
 
-My current and earlier work is collected on the [projects page]({{ '/projects/' | relative_url }}). A full record of my education, awards, teaching, and research skills is available on the [CV page]({{ '/cv/' | relative_url }}).
+- Multimodal foundation models for physical signals such as vibration, acoustics, and haptics
+- Physical-signal-based large models for robot tactile perception and embodied intelligence
+- Industrial intelligent agents
+
+My long-term research goal is to develop **foundation-model-based physical signal intelligence**: building unified representations, cross-modal alignment methods, and reliable reasoning frameworks that connect physical signals with **language, vision, and action spaces**.
+
+My current and earlier work is collected on the [projects page]({{ '/projects/' | relative_url }}). A full record of my education, awards, teaching, and research skills is available on the <a class="cv-pdf-link" href="{{ '/assets/cv/cv-xinran-zhang.pdf' | relative_url }}">CV page</a>.
+
+<hr class="section-divider">
+
+## Research Summary
+{: #research-summary }
+
+Modern industrial and robotic systems continuously generate rich physical signals, including vibration, tactile, acoustic, force, and other sensor measurements. However, most existing foundation models are primarily designed for text, images, or videos, while physical signals remain underrepresented in the current multimodal AI landscape.
+
+My research focuses on physical signal foundation models for industrial and robotic systems. I study how large language models and large multimodal models can be adapted to non-text physical signals, including vibration and tactile signals, through signal tokenization, cross-modal alignment, robust representation learning, and natural-language reasoning. My recent work progresses from signal-image-based multimodal instruction tuning to domain-generalized VLM adaptation and raw 1-D physical signal tokenization for LLMs. In the long term, I aim to build reliable multimodal systems that connect physical signals with vision, language, and action for robotic perception, intelligent manufacturing, and industrial/medical robotic applications.
 
 <hr class="section-divider">
 
@@ -107,6 +101,15 @@ I reproduced and implemented a deep-learning-based BEV map construction framewor
 **Status:** Undergraduate thesis &middot; Awarded Excellent Undergraduate Thesis at Hunan University
 
 <hr class="section-divider">
+
+{% if page.announcements and page.announcements.enabled %}
+## News
+{: #news }
+
+{% include news.liquid limit=true %}
+
+<hr class="section-divider">
+{% endif %}
 
 ## Awards & Social Activities
 {: #awards-social-activities }

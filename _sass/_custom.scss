@@ -42,6 +42,11 @@ body {
   text-decoration: underline;
 }
 
+.about-page a.cv-pdf-link,
+.about-page a.cv-pdf-link:hover {
+  color: var(--global-theme-color);
+}
+
 .about-page strong,
 .about-page b {
   color: #000000;
@@ -271,8 +276,8 @@ figure.highlight code {
   }
 
   .about-section-nav .nav-link {
-    padding-right: 0.3rem !important;
-    padding-left: 0.3rem !important;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
     font-size: 0.85rem;
   }
 }

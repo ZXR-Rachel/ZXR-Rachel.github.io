@@ -44,12 +44,6 @@ layout: default
         {{ page_sections | first }}
       {% endif %}
 
-      <!-- News -->
-      {% if page.announcements and page.announcements.enabled %}
-        <h2 id="news">News</h2>
-        {% include news.liquid limit=true %}
-      {% endif %}
-
       <!-- Latest posts -->
       {% if page.latest_posts and page.latest_posts.enabled %}
         <h2>
@@ -60,9 +54,6 @@ layout: default
 
       <!-- Selected papers -->
       {% if page.selected_papers %}
-        {% if page.announcements and page.announcements.enabled %}
-          <hr class="section-divider">
-        {% endif %}
         <h2 id="selected-publications">Selected Projects and Publications</h2>
         <p class="section-note">For more information, click a project title.</p>
         <div class="selected-publications-section">{% include selected_papers.liquid %}</div>
