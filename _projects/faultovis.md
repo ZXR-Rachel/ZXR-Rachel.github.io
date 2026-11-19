@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "FaultOvis: A Domain-Generalized Vision-Language Model for Intelligent Bearing Fault Diagnosis"
-description: Visual discriminative reinforcement for bearing diagnosis across unseen operating conditions.
+title: "FaultOvis: A Generative-Discriminative Vision-Language Framework for Domain-Generalized Rolling Bearing Fault Diagnosis"
+description: Generative diagnosis and visual discriminative reinforcement across unseen bearing operating conditions.
 img: assets/img/faultovis/paper-2026-fig2.png
 importance: 3
 category: current research
@@ -79,9 +79,11 @@ _styles: |
 
 ## Overview
 
-FaultOvis is a domain-generalized vision-language framework for cross-domain rolling bearing fault diagnosis under unseen working conditions.
+**Authors:** Xinran Zhang, Jinfeng Huang, Xu Wang, Qi Li, Feibin Zhang, Wenxiu Lu, Zhaoye Qin, and Fulei Chu.
 
-It converts raw vibration signals into short-time Fourier transform (STFT) images and adapts a vision-language model for multimodal industrial fault diagnosis. Unlike purely generative VLM fine-tuning methods that may only learn diagnostic answer templates, FaultOvis introduces explicit visual-side supervision to improve fault-discriminative and domain-invariant representation learning.
+FaultOvis is a generative-discriminative vision-language framework for domain-generalized rolling bearing fault diagnosis under unseen working conditions.
+
+It converts raw vibration signals into short-time Fourier transform (STFT) images and adapts a vision-language model for multimodal industrial fault diagnosis. The generative pathway produces language-based diagnostic responses, while explicit visual-side supervision improves fault-discriminative and domain-invariant representation learning.
 
 This work represents my exploration of adapting multimodal foundation models to industrial sensor-image reasoning under domain shifts.
 

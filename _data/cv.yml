@@ -35,7 +35,7 @@
     - 'Margin-Aware Bidirectional Mamba for Imbalanced Cross-Condition Bearing Fault Diagnosis — ICARCE 2026; accepted.'
     - '<a href="/projects/vibalign/">VibAlign: Direct Vibration Signal-to-Language Modeling with Large Language Models for Fault Diagnosis and Tactile Perception</a> — under review at <em>Engineering Applications of Artificial Intelligence</em>.'
     - '<a href="/projects/iadg-bimamba/">IADG-BiMamba: Imbalance-Aware Domain Generalization with Bidirectional Mamba for Cross-Condition Bearing Fault Diagnosis</a> — under review at <em>IEEE Sensors Journal</em>.'
-    - '<a href="/projects/faultovis/">FaultOvis: A Domain-Generalized Vision-Language Model for Intelligent Bearing Fault Diagnosis</a> — under review at <em>Applied Soft Computing</em>.'
+    - '<a href="/projects/faultovis/">FaultOvis: A Generative-Discriminative Vision-Language Framework for Domain-Generalized Rolling Bearing Fault Diagnosis</a> — under review at <em>Applied Soft Computing</em>.'
 
 - title: Research Experience
   type: list
