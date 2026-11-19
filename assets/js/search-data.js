@@ -36,29 +36,34 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-preparing-ph-d-applications-and-developing-my-research-portfolio-on-physical-signal-foundation-models",
           title: 'I am preparing Ph.D. applications and developing my research portfolio on physical-signal foundation...',
           description: "",
-          section: "News",},{id: "news-faultovis-was-submitted-to-ieee-transactions-on-industrial-informatics",
-          title: 'FaultOvis was submitted to IEEE Transactions on Industrial Informatics.',
-          description: "",
           section: "News",},{id: "news-vsllava-was-published-in-advanced-engineering-informatics",
           title: 'VSLLaVA was published in Advanced Engineering Informatics.',
+          description: "",
+          section: "News",},{id: "news-the-paper-margin-aware-bidirectional-mamba-for-imbalanced-cross-condition-bearing-fault-diagnosis-was-accepted-at-icarce-2026-vibalign-iadg-bimamba-and-faultovis-are-under-review-at-engineering-applications-of-artificial-intelligence-ieee-sensors-journal-and-applied-soft-computing-respectively",
+          title: 'The paper “Margin-Aware Bidirectional Mamba for Imbalanced Cross-Condition Bearing Fault Diagnosis” was accepted...',
           description: "",
           section: "News",},{id: "projects-vision-based-local-map-construction-for-autonomous-driving",
           title: 'Vision-based Local Map Construction for Autonomous Driving',
           description: "End-to-end local HD map construction from multi-view camera images using BEV representations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/autonomous-mapping/";
-            },},{id: "projects-faultovis-domain-generalized-vlm-for-fault-diagnosis",
-          title: 'FaultOvis: Domain-Generalized VLM for Fault Diagnosis',
-          description: "Domain-generalized vision-language adaptation for rolling bearing diagnosis under unseen working conditions.",
+            },},{id: "projects-faultovis-a-domain-generalized-vision-language-model-for-intelligent-bearing-fault-diagnosis",
+          title: 'FaultOvis: A Domain-Generalized Vision-Language Model for Intelligent Bearing Fault Diagnosis',
+          description: "Visual discriminative reinforcement for bearing diagnosis across unseen operating conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/faultovis/";
-            },},{id: "projects-vibalign-learning-language-aligned-signal-tokens",
-          title: 'VibAlign: Learning Language-Aligned Signal Tokens',
-          description: "Raw physical-signal tokenization for industrial diagnosis and robotic tactile perception.",
+            },},{id: "projects-iadg-bimamba-imbalance-aware-domain-generalization-for-bearing-fault-diagnosis",
+          title: 'IADG-BiMamba: Imbalance-Aware Domain Generalization for Bearing Fault Diagnosis',
+          description: "Raw-vibration diagnosis under class-imbalanced source data and unseen operating conditions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/iadg-bimamba/";
+            },},{id: "projects-vibalign-direct-vibration-signal-to-language-modeling-with-large-language-models-for-fault-diagnosis-and-tactile-perception",
+          title: 'VibAlign: Direct Vibration Signal-to-Language Modeling with Large Language Models for Fault Diagnosis and...',
+          description: "Direct 1-D vibration-to-language modeling for bearing diagnosis and robotic tactile perception.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/vibalign/";
-            },},{id: "projects-vsllava-multimodal-foundation-models-for-vibration-analysis",
-          title: 'VSLLaVA: Multimodal Foundation Models for Vibration Analysis',
+            },},{id: "projects-vsllava-a-pipeline-for-large-multimodal-foundation-models-in-industrial-vibration-signal-analysis",
+          title: 'VSLLaVA: A pipeline for Large Multimodal Foundation Models in industrial vibration signal analysis...',
           description: "Expert-guided multimodal instruction tuning and GRPO refinement for industrial vibration signal analysis.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/vsllava/";
@@ -82,6 +87,20 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/ZXR-Rachel", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=MIjD1JwAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0002-0328-5294", "_blank");
         },
       },{
       id: 'light-theme',
