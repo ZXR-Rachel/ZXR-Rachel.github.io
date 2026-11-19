@@ -47,9 +47,9 @@ ninja.data = [{
           description: "End-to-end local HD map construction from multi-view camera images using BEV representations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/autonomous-mapping/";
-            },},{id: "projects-faultovis-a-domain-generalized-vision-language-model-for-intelligent-bearing-fault-diagnosis",
-          title: 'FaultOvis: A Domain-Generalized Vision-Language Model for Intelligent Bearing Fault Diagnosis',
-          description: "Visual discriminative reinforcement for bearing diagnosis across unseen operating conditions.",
+            },},{id: "projects-faultovis-a-generative-discriminative-vision-language-framework-for-domain-generalized-rolling-bearing-fault-diagnosis",
+          title: 'FaultOvis: A Generative-Discriminative Vision-Language Framework for Domain-Generalized Rolling Bearing Fault Diagnosis',
+          description: "Generative diagnosis and visual discriminative reinforcement across unseen bearing operating conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/faultovis/";
             },},{id: "projects-iadg-bimamba-imbalance-aware-domain-generalization-for-bearing-fault-diagnosis",
