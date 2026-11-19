@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "VibAlign: Learning Language-Aligned Signal Tokens"
-description: Raw physical-signal tokenization for industrial diagnosis and robotic tactile perception.
+title: "VibAlign: Direct Vibration Signal-to-Language Modeling with Large Language Models for Fault Diagnosis and Tactile Perception"
+description: Direct 1-D vibration-to-language modeling for bearing diagnosis and robotic tactile perception.
 img: assets/img/vibalign/fig1.png
 importance: 1
 category: current research
@@ -194,7 +194,7 @@ During inference, VibAlign uses candidate scoring over the legal label set to im
 
 VibAlign is evaluated on multiple rolling bearing fault diagnosis datasets, including public benchmark datasets and real-world THU vibration data.
 
-The results show that VibAlign achieves strong within-dataset performance on public industrial vibration datasets and competitive performance compared with traditional discriminative classifiers and image-based MLLM diagnostic baselines under their respective original inference protocols.
+Across five public bearing datasets, VibAlign reaches **98.17% average macro-F1**, close to the strongest discriminative baseline, BiMamba-cls, at **98.22%**. It also produces structured, label-conditioned responses through the same LLM interface.
 
 These results suggest that raw physical-signal tokenization can serve as a promising alternative to signal-image-based MLLM adaptation for industrial fault diagnosis.
 
@@ -212,7 +212,7 @@ In addition to industrial vibration diagnosis, VibAlign is evaluated on robotic 
 
 This setting is important because tactile vibration signals are generated through physical contact between a robot and external materials. By applying VibAlign to robotic tactile data, this work extends physical-signal-to-language modeling from industrial machinery diagnosis toward robotic perception and embodied physical sensing.
 
-The tactile recognition results show that raw tactile vibration signals can also be converted into LLM-compatible signal tokens for structured material recognition.
+On the FC tactile material dataset, VibAlign reaches **91.34% macro-F1**. This result uses the same signal encoder, codebook connector, and LLM interface as the industrial diagnosis experiments.
 
 <hr class="section-divider">
 
@@ -220,7 +220,7 @@ The tactile recognition results show that raw tactile vibration signals can also
 
 VibAlign further studies different inference strategies and signal-embedding conditions.
 
-The inference comparison shows that open-ended free generation is unstable for structured physical-signal prediction, while candidate scoring over legal labels substantially improves label validity and response-format stability.
+The inference comparison shows that open-ended free generation is unstable for structured physical-signal prediction, producing up to **100% unknown predictions on PU**. Candidate scoring over legal labels eliminates invalid labels while retaining structured explanation generation.
 
 The signal-embedding sanity study shows that replacing real signal embeddings with no signal, random noise, or shuffled mismatched embeddings leads to clear performance degradation. This indicates that VibAlign relies on the input physical signal rather than only memorizing textual priors or response templates.
 
@@ -270,7 +270,7 @@ The results support the importance of signal-conditioned LLM adaptation, signal-
 
 The real-world THU vibration dataset presents stronger dataset shift and more challenging signal conditions than standard public benchmarks.
 
-Additional analysis shows that raw-signal-to-language modeling remains sensitive to severe dataset-level shifts. The THU experiments also suggest that longer temporal contexts can be beneficial for real-world vibration modeling, especially when fault-related patterns require more extended temporal information.
+Additional analysis shows that raw-signal-to-language modeling remains sensitive to severe dataset-level shifts. On the real-world THU bearing dataset, increasing the signal length from **1,024** to **4,096** samples raises macro-F1 from **61.60%** to **79.84%**, indicating the value of longer temporal context.
 
 <figure class="paper-figure">
   <div class="figure-grid figure-grid--thu">
@@ -290,9 +290,8 @@ Additional analysis shows that raw-signal-to-language modeling remains sensitive
 
 ## Paper and Code
 
-- Paper: Coming soon
-- Code: Coming soon
-- Status: Manuscript coming soon
+- Paper: Under review at *Engineering Applications of Artificial Intelligence*; full text is not publicly available
+- Code: Not publicly available
 
 <hr class="section-divider">
 

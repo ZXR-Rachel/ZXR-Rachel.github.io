@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "VSLLaVA: Multimodal Foundation Models for Vibration Analysis"
+title: "VSLLaVA: A pipeline for Large Multimodal Foundation Models in industrial vibration signal analysis"
 description: Expert-guided multimodal instruction tuning and GRPO refinement for industrial vibration signal analysis.
 img: assets/img/vsllava/architecture.png
-importance: 3
+importance: 4
 category: published research
 github: https://github.com/ZXR-Rachel/VSLLaVA
 permalink: /projects/vsllava/
@@ -204,6 +204,7 @@ Overall, the JNU experiment shows that envelope analysis is a useful but not uni
 ## Paper and Code
 
 - Published paper: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1474034626007159)
+- DOI: [10.1016/j.aei.2026.105023](https://doi.org/10.1016/j.aei.2026.105023)
 - Preprint: [arXiv](https://arxiv.org/abs/2409.07482)
 - Code: [GitHub](https://github.com/ZXR-Rachel/VSLLaVA)
 - Citation: Li Q, Zhang X, Huang J, et al. VSLLaVA: A pipeline for Large Multimodal Foundation Models in industrial vibration signal analysis. *Advanced Engineering Informatics*, 2026, 76: 105023.

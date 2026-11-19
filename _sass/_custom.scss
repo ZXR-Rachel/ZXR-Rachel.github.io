@@ -179,9 +179,35 @@ figure.highlight code {
   font-weight: 600;
 }
 
+.about-profile .profile-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.7rem;
+}
+
+.about-profile .profile-social a,
+.about-profile .profile-social a:visited,
+.about-profile .profile-social a:hover,
+.about-profile .profile-social a:focus {
+  color: #000000;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
 .about-intro-copy,
 .about-sections {
   min-width: 0;
+}
+
+.about-page .last-updated {
+  margin-top: 1.25rem;
+  color: #808080;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .section-divider {

@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: left
-  image: xinran-zhang.jpg
+  image: Slytherin.png
   image_circular: true
   more_info: >
     <p class="profile-name">Xinran Zhang</p>
@@ -27,6 +27,8 @@ latest_posts:
 I am currently a Master's student in **Mechanical Engineering at Tsinghua University**, working on **physical-signal foundation models for industrial and robotic systems**.
 
 My research explores how non-text physical signals, such as **vibration, tactile, and acoustic signals**, can be represented, aligned, and reasoned over by **large language models and multimodal foundation models**, with applications in **industrial diagnosis, robotic perception, and intelligent operation and maintenance**.
+
+<p class="last-updated">Last updated: 19 November 2026</p>
 
 <!-- about-intro-end -->
 
@@ -50,7 +52,7 @@ My research explores how non-text physical signals, such as **vibration, tactile
     <img src="{{ '/assets/img/education/hnu.png' | relative_url }}" alt="Hunan University logo">
     <div>
       <strong>Hunan University</strong><br>
-      B.S. in Vehicle Engineering<br>
+      B.Eng. in Vehicle Engineering<br>
       Sept. 2020 - Jun. 2024<br>
       GPA: <strong>3.91 / 4.0</strong>, Rank: <strong>1 / 123 for three consecutive academic years</strong>
     </div>
@@ -79,7 +81,7 @@ My current and earlier work is collected on the [projects page]({{ '/projects/' 
 
 Modern industrial and robotic systems continuously generate rich physical signals, including vibration, tactile, acoustic, force, and other sensor measurements. However, most existing foundation models are primarily designed for text, images, or videos, while physical signals remain underrepresented in the current multimodal AI landscape.
 
-My research focuses on physical signal foundation models for industrial and robotic systems. I study how large language models and large multimodal models can be adapted to non-text physical signals, including vibration and tactile signals, through signal tokenization, cross-modal alignment, robust representation learning, and natural-language reasoning. My recent work progresses from signal-image-based multimodal instruction tuning to domain-generalized VLM adaptation and raw 1-D physical signal tokenization for LLMs. In the long term, I aim to build reliable multimodal systems that connect physical signals with vision, language, and action for robotic perception, intelligent manufacturing, and industrial/medical robotic applications.
+My research focuses on physical signal foundation models for industrial and robotic systems. I study how large language models and large multimodal models can be adapted to non-text physical signals, including vibration and tactile signals, through signal tokenization, cross-modal alignment, robust representation learning, and natural-language reasoning. My recent work spans signal-image-based multimodal instruction tuning, domain-generalized VLM adaptation, imbalance-aware raw-signal modeling, and direct 1-D signal tokenization for LLMs. In the long term, I aim to build reliable multimodal systems that connect physical signals with vision, language, and action for robotic perception, intelligent manufacturing, and industrial/medical robotic applications.
 
 <hr class="section-divider">
 
@@ -90,15 +92,15 @@ My research focuses on physical signal foundation models for industrial and robo
 
 ### Vision-based Local Map Construction for Autonomous Driving
 
-**This undergraduate thesis explored end-to-end local HD map construction for autonomous driving by transforming multi-view camera images into bird's-eye-view map representations.**
+**This undergraduate thesis reproduced BeMapNet, an end-to-end camera-only local HD map construction framework for autonomous driving.**
 
-I reproduced and implemented a deep-learning-based BEV map construction framework using NuScenes surround-view camera images. The pipeline includes image feature extraction, BEV view transformation, map-element decoding, and vectorized reconstruction of lane dividers, pedestrian crossings, and road boundaries with piecewise Bezier curves.
+Using six NuScenes surround-view cameras, I reconstructed lane dividers, pedestrian crossings, and road boundaries within a 60 m x 30 m perception range. The pipeline combines Swin Transformer feature extraction, BiFPN fusion, BEV view transformation, Mask2Former-style decoding, and piecewise Bezier curve prediction.
 
 **Highlights:** autonomous driving &middot; BEV perception &middot; local HD map construction &middot; Transformer &middot; Swin Transformer &middot; BiFPN &middot; Mask2Former &middot; piecewise Bezier curve
 
-**Results:** trained and evaluated on NuScenes; achieved **42.6 mAP@HARD** and **61.4 mAP@EASY** over three static map-element categories; showed higher average AP than IPM, LSS, VPN, and HDMapNet baselines under the same 30-epoch evaluation setting.
+**Results:** trained the released Swin-T configuration on two RTX 2080 Ti GPUs for 184 hours; achieved **42.6 mAP@HARD** and **61.4 mAP@EASY**, within 1.1 mAP of the published BeMapNet results in both settings.
 
-**Status:** Undergraduate thesis &middot; Awarded Excellent Undergraduate Thesis at Hunan University
+**Status:** Undergraduate thesis &middot; Awarded Outstanding Undergraduate Thesis at Hunan University
 
 <hr class="section-divider">
 
@@ -118,6 +120,7 @@ I reproduced and implemented a deep-learning-based BEV map construction framewor
 
 - University First-Class Scholarship, Tsinghua University, 2025
 - National Scholarship, 2021, 2022, 2023
+- Outstanding Graduate, Outstanding Undergraduate Thesis, and Merit Student Award, Hunan University, 2024
 - Honorable Mention, Mathematical Contest in Modeling, 2023
 - National First Prize, National English Competition for College Students, 2023
 - National Third Prize, Chinese Mathematics Competition for College Students, 2023
@@ -125,8 +128,8 @@ I reproduced and implemented a deep-learning-based BEV map construction framewor
 
 ### Teaching & Leadership
 
-- Teaching Assistant, **Fundamentals of Engineering Drawing**, Tsinghua University
-- Leader, Peer Learning Support Group, Hunan University
+- Graduate Teaching Assistant, **Fundamentals of Engineering Drawing**, Tsinghua University, 2024-2025; rated Excellent in the final evaluation
+- Leader, Peer Learning Support Group, Hunan University, 2021-2024; received the Star of Academic Support award
 
 <hr class="section-divider">
 
@@ -143,6 +146,12 @@ I reproduced and implemented a deep-learning-based BEV map construction framewor
 ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
+### Programming and Tools
+
+- Python, MATLAB, C/C++, and LaTeX
+- PyTorch, Hugging Face Transformers, ms-swift, and EvalScope
+- Linux, Git, VS Code, Origin, Visio, AutoCAD, and SolidWorks
+
 ### Research Skills
 
 - LLM/VLM adaptation
@@ -150,7 +159,7 @@ I reproduced and implemented a deep-learning-based BEV map construction framewor
 - Multimodal instruction tuning
 - GRPO / RL-based refinement
 - Contrastive learning
-- Representation learning
+- State space models (Mamba and BiMamba) and robust representation learning
 - Vibration and tactile signal preprocessing
 - STFT and envelope spectrum analysis
 - Signal visualization and experimental evaluation

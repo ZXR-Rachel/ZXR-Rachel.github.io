@@ -1,18 +1,21 @@
 - title: Education
   type: time_table
   contents:
-    - title: M.S. in Mechanical Engineering
+    - title: Thesis M.S. in Mechanical Engineering
       institution: Tsinghua University
       year: Sept. 2024 - Jun. 2027 (expected)
       description:
         - "GPA: 4.0 / 4.0"
         - "Rank: 1 / 74"
-    - title: B.S. in Vehicle Engineering
+        - "Selected coursework: Artificial Neural Network; Basic Algorithms in Artificial Intelligence"
+        - "Honor: University First-Class Scholarship (2025)"
+    - title: B.Eng. in Vehicle Engineering
       institution: Hunan University
       year: Sept. 2020 - Jun. 2024
       description:
         - "GPA: 3.91 / 4.0"
         - "Rank: 1 / 123 for three consecutive academic years"
+        - "Honors: National Scholarship (2021-2023); Outstanding Graduate; Outstanding Undergraduate Thesis; Merit Student Award"
 
 - title: Research Interests
   type: list
@@ -25,18 +28,41 @@
     - Prognostics and Health Management (PHM)
     - Industrial AI Agents and Intelligent Operation and Maintenance
 
+- title: Publications and Manuscripts
+  type: list
+  contents:
+    - '<a href="/projects/vsllava/">VSLLaVA: A pipeline for Large Multimodal Foundation Models in industrial vibration signal analysis</a> — <em>Advanced Engineering Informatics</em>, 76:105023, 2026; published.'
+    - 'Margin-Aware Bidirectional Mamba for Imbalanced Cross-Condition Bearing Fault Diagnosis — ICARCE 2026; accepted.'
+    - '<a href="/projects/vibalign/">VibAlign: Direct Vibration Signal-to-Language Modeling with Large Language Models for Fault Diagnosis and Tactile Perception</a> — under review at <em>Engineering Applications of Artificial Intelligence</em>.'
+    - '<a href="/projects/iadg-bimamba/">IADG-BiMamba: Imbalance-Aware Domain Generalization with Bidirectional Mamba for Cross-Condition Bearing Fault Diagnosis</a> — under review at <em>IEEE Sensors Journal</em>.'
+    - '<a href="/projects/faultovis/">FaultOvis: A Domain-Generalized Vision-Language Model for Intelligent Bearing Fault Diagnosis</a> — under review at <em>Applied Soft Computing</em>.'
+
+- title: Research Experience
+  type: list
+  contents:
+    - '<a href="/projects/vibalign/">Raw Physical Signal Tokenization and Language Alignment for LLM</a> — Apr. 2026-present.'
+    - '<a href="/projects/iadg-bimamba/">Imbalance-Aware Domain Generalization for Cross-Condition Fault Diagnosis</a> — Apr. 2026-present.'
+    - '<a href="/projects/faultovis/">Domain-Generalized VLM Adaptation for Industrial Sensor Images</a> — Oct. 2025-Apr. 2026.'
+    - '<a href="/projects/vsllava/">Instruction Tuning and RL Refinement for Physical-Signal LMMs</a> — Apr.-Sept. 2025.'
+    - '<a href="/projects/autonomous-mapping/">Transformer-Based BEV Local Map Construction for Autonomous Driving</a> — Dec. 2023-May 2024.'
+
 - title: Selected Awards
   type: time_table
   contents:
     - year: "2025"
       items:
         - University First-Class Scholarship, Tsinghua University
-    - year: "2021-2023"
+    - year: "2024"
       items:
-        - National Scholarship, 2021, 2022, and 2023
+        - Outstanding Graduate, Outstanding Undergraduate Thesis, and Merit Student Award, Hunan University
+    - year: "2023"
+      items:
         - Honorable Mention, Mathematical Contest in Modeling, 2023
         - National First Prize, National English Competition for College Students, 2023
         - National Third Prize, Chinese Mathematics Competition for College Students, 2023
+    - year: "2021-2023"
+      items:
+        - National Scholarship, 2021, 2022, and 2023
     - year: "2022"
       items:
         - Second Prize, Hunan Provincial Mechanics Competition
@@ -44,19 +70,15 @@
 - title: Teaching and Leadership
   type: list
   contents:
-    - Teaching Assistant, <strong>Fundamentals of Engineering Drawing</strong>, Tsinghua University
-    - Leader, Peer Learning Support Group, Hunan University
+    - Graduate Teaching Assistant, <strong>Fundamentals of Engineering Drawing</strong>, Tsinghua University, 2024-2025; rated Excellent in the final evaluation
+    - Leader, Peer Learning Support Group, Hunan University, 2021-2024; received the Star of Academic Support award
 
 - title: Programming and Research Tools
   type: list
   contents:
-    - Python
-    - PyTorch
-    - Hugging Face
-    - Linux
-    - Git
-    - VS Code
-    - LaTeX
+    - "Programming: Python, MATLAB, C/C++, LaTeX"
+    - "Deep learning: PyTorch, Hugging Face Transformers, ms-swift, EvalScope"
+    - "Tools: Linux, Git, VS Code, Origin, Visio, AutoCAD, SolidWorks"
 
 - title: Research Skills
   type: list
@@ -66,7 +88,7 @@
     - Multimodal instruction tuning
     - GRPO / reinforcement-learning-based refinement
     - Contrastive learning
-    - Representation learning
+    - State space models (Mamba and BiMamba) and robust representation learning
     - Vibration and tactile signal preprocessing
     - STFT and envelope spectrum analysis
     - Signal visualization and experimental evaluation
@@ -81,6 +103,6 @@
     - name: CV
       value: <a href="/assets/cv/cv-xinran-zhang.pdf">Download PDF</a>
     - name: Google Scholar
-      value: Coming soon
-    - name: LinkedIn
-      value: Coming soon
+      value: <a href="https://scholar.google.com/citations?user=MIjD1JwAAAAJ">Xinran Zhang</a>
+    - name: ORCID
+      value: <a href="https://orcid.org/0009-0002-0328-5294">0009-0002-0328-5294</a>

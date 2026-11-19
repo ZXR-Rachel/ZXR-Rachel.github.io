@@ -1,6 +1,10 @@
 AEI:
   color: "#0f7c82"
-MSSP:
+EAAI:
   color: "#1f6f8b"
-TII:
+ASC:
+  color: "#6a5495"
+ICARCE:
+  color: "#775c2b"
+IEEE SJ:
   color: "#8a3b47"
